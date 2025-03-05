@@ -34,9 +34,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #videoContainer {
-        background-color: #C3283A;
-    }
     #productsContainer {
         display: flex;
         align-items: center;
@@ -50,7 +47,9 @@
         grid-template-areas: 
             'leftTop leftTop leftTop rightCol'
             'leftBottom leftBottom leftBottom rightCol';
+
         height: 750px;
+        background-color: #C3283A;
     }
 }
 
