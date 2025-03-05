@@ -1,0 +1,353 @@
+/* ---- KeyFrames for the Animation on the Products ---- */
+/* Animation That Rotates an Element 15 Degrees, First Left Then Right */
+@keyframes rotateLeft {
+    0% {transform: rotate(15deg);}
+    50% {transform: rotate(-15deg);}
+    100% {transform: rotate(15deg);}
+}
+/* Animation That Rotates an Element 15 Degrees, First Right Then Left */
+@keyframes rotateRight {
+    0% {transform: rotate(-15deg);}
+    50% {transform: rotate(15deg);}
+    100% {transform: rotate(-15deg);}
+}
+
+@media screen and (max-width: 1200px){
+    #videoContainer {
+        display: none;
+    }
+    #factsSection {
+        background-color: brown;
+    }
+    #productsContainer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    #factsSection {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #productsContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }   
+    #factsSection {
+        display: grid;
+        grid-template-rows: repeat(2, 37.5%);
+        grid-template-columns: repeat(1, 25%);
+        grid-template-areas: 
+            'leftTop leftTop leftTop rightCol'
+            'leftBottom leftBottom leftBottom rightCol';
+        height: 750px;
+    }
+}
+
+@media screen and (min-width: 785px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* HTML Element */
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* Body Element*/
+body {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+/* Header Element */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/backgrounds/skittles-candy-background-2q6ivo1161c1rjue.jpg");
+    /* Candy Background Downloaded From https://wallpapers.com/wallpapers/skittles-candy-background-2q6ivo1161c1rjue.html */
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+/* Menu Element */
+menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+/* Footer Element */
+footer {
+    background: rgb(255,0,0);
+    background: radial-gradient(red, #C3283A);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+/* Paragraph Tags Within a Footer and Label Elements */
+footer p, label {
+    color: white;
+}
+/* Div Tags Within a Footer Element*/
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Form Element and Div Tags Within a Form Element */
+form, form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+}
+/* H4 Tags */
+h4 {
+    font-size: 2em;
+    font-family: Chewy, Arial, Helvetica, sans-serif;
+}
+/* H5 Tags */
+h5 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* H3 and H5 Tags */
+h3, h5 {
+    color: white;
+    font-size: 3em;
+    font-family: Chewy, Arial, Helvetica, sans-serif;   
+}
+/* H3, H5 Tags and Anchor Elements Within an li Element */
+h3, h5, li a {
+    text-shadow: 5px 5px 5px black;
+}
+/* Anchor Tags Within an li Element */
+li a {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 0px 0px 10px red;
+    border: 3px solid #C3283A;
+    border-radius: 20%;
+    transition: all 0.25s;
+    margin: 2.5vh;
+}
+/* Anchor Tags Within an li Element When Hovered Over With the Mouse */
+li a:hover {
+    color: #C3283A;
+    text-shadow: 0px 0px 10px white;
+    background-color: white;
+}
+/* li Elements */
+li {
+    list-style-type: none;
+}
+/* Paragraph and Label Elements */
+p, label, button {
+    font-size: 1.5em;
+    font-family: "Shantell Sans", Georgia, sans-serif;
+}
+/* Button Elements */
+button {
+    margin: 1.5vh;
+}
+/* Button Elements When the Mouse Cursor is Hovered Over */
+button:hover {
+    color: #C3283A;
+    background-color: white;
+}
+/* Anchor Elements */
+a {
+    text-decoration: none;
+    font-family: DynaPuff;
+}
+/* Figcaption Elements*/
+figcaption {
+    font-size: 1.7em;
+    font-family: "Shantell Sans"; 
+    padding-top: 10px;
+    cursor: pointer;   
+}
+/* Anchor Elements Within a Figcaption Element */
+figcaption a, #productsSection p {
+    color: white;
+    text-shadow: 1px 1px 5px black; 
+}
+/* Input Elements and TextArea Elements */
+input, textarea {
+    border-radius: 5%;
+    box-shadow: 3px 3px 5px black;
+}
+/* ------ IDs ------ */
+/* factsSection ID */
+#factsSection {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+    width: 100%;
+}
+/* leftTop ID */
+#leftTop {
+    grid-area: leftTop;
+    border-bottom: 5px #C3283A solid;
+    border-right: 5px #C3283A solid;
+    margin-bottom: 5%;
+}
+/* leftBottom ID */
+#leftBottom {
+    grid-area: leftBottom; 
+    border-top: 5px #C3283A solid;
+    border-right: 5px #C3283A solid;
+    margin-top: 7%;
+    transition: padding 0.5s
+}
+/* rightCol ID */
+#rightCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3vh;
+    background-color: white; 
+    border-radius: 7%;
+    grid-area: rightCol;  
+    border-left: 5px #C3283A solid; 
+    padding: 10%;
+}
+/* When the leftTop or leftBottom Container is Hovered Over With the Mouse Cursor */
+#leftTop:hover, #leftBottom:hover {
+    padding: 2%;
+}
+/* leftTop and leftBottom IDs */
+#leftTop, #leftBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7%;
+    cursor: pointer;
+    transition: padding 0.5s;
+}
+/* Img Elements Within any Element With the leftTop and leftBottom IDs */
+#leftTop img, #leftBottom img {
+    float: left;
+    margin: 3vh;
+}
+/* videoContainer ID */
+#videoContainer {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+/* productsSection ID */
+#productsSection {
+    background-image: url(../images/backgrounds/pexels-fwstudio-33348-172277.jpg);
+    /* Wood Background Downloaded From https://www.pexels.com/photo/brown-wooden-panel-172277/ */
+    background-size: cover;
+    width: 100%;
+    height: 75vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* buttonContainer ID */
+#buttonContainer{
+    display: flex;
+    flex-direction: row; 
+    margin: 2vh;   
+}
+/* buttonContainer and socialMediaContainer IDs */
+#buttonContainer, #socialMediaContainer {
+    display: flex;
+    flex-direction: row;   
+}
+/* img Tags Within an Anchor Element Within   */
+#socialMediaContainer a img {
+    background-color: white;
+    border-radius: 50%;
+    margin: 1vh;
+    transition: border 0.20s ease-in;
+}
+/* When img Tags Within an Anchor Element Within */
+#socialMediaContainer a img:hover {
+    border: 5px solid black;
+}
+/* ---- Section About Each Individual Figcaption in the Product Section ---- */
+/* All of the IDs Specific to the Figcaption of the Products */
+#originalSkittleCaption a, #berrySkittleCaption a, #tropicalSkittleCaption a, #sourSkittleCaption a{
+    transition: all 0.6s;
+}
+/* When Each of the Different Figcaptions */
+#originalSkittleCaption a:hover {
+    color: #C3283A;
+    text-shadow: 1px 1px 5px #28C368;  
+}
+#berrySkittleCaption a:hover {
+    color: #AB4693; 
+    text-shadow: 1px 1px 5px #4AB469;  
+}
+#tropicalSkittleCaption a:hover {
+    color: #00AFEA;
+    text-shadow: 1px 1px 5px #EA4800;
+}
+#sourSkittleCaption a:hover {
+    color: #7DA600;
+    text-shadow: 1px 1px 5px #7A00A6;
+}
+/* ---- Classes ---- */
+/* sectionSeperator Class */
+.sectionSeperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,0,0);
+    background: radial-gradient(red, #C3283A);
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+}
+/* productBoxLeft and productBoxRight Classes */
+.productBoxLeft, .productBoxRight  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 7%;
+    width: 25%;
+    height: 300px;
+}
+/* productBoxLeft Class */
+.productBoxLeft  {
+    animation: rotateLeft 12s infinite;
+}
+/* productBoxRight Class */
+.productBoxRight {
+    animation: rotateRight 12s infinite;
+}
