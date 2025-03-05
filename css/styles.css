@@ -34,7 +34,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #productsContainer{
+    #videoContainer {
+        background-color: #C3283A;
+    }
+    #productsContainer {
         display: flex;
         align-items: center;
         justify-content: center;
