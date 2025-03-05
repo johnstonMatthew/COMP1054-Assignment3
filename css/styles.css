@@ -17,7 +17,7 @@
         display: none;
     }
     #factsSection {
-        background-color: brown;
+        background-color: #C3283A;
     }
     #productsContainer {
         display: grid;
@@ -50,6 +50,8 @@
 
         height: 750px;
         background-color: #C3283A;
+        position: relative;
+        z-index: -2;
     }
 }
 
