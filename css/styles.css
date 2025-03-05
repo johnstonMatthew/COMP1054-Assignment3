@@ -213,21 +213,19 @@ input, textarea {
     justify-content: center;
     padding-top: 20vh;
     width: 100%;
+    height: 116vh;
 }
 /* leftTop ID */
 #leftTop {
     grid-area: leftTop;
     border-bottom: 5px #C3283A solid;
     border-right: 5px #C3283A solid;
-    margin-bottom: 5%;
 }
 /* leftBottom ID */
 #leftBottom {
     grid-area: leftBottom; 
     border-top: 5px #C3283A solid;
     border-right: 5px #C3283A solid;
-    margin-top: 7%;
-    transition: padding 0.5s
 }
 /* rightCol ID */
 #rightCol {
@@ -244,7 +242,7 @@ input, textarea {
 }
 /* When the leftTop or leftBottom Container is Hovered Over With the Mouse Cursor */
 #leftTop:hover, #leftBottom:hover {
-    padding: 2%;
+    padding: 100%;   
 }
 /* leftTop and leftBottom IDs */
 #leftTop, #leftBottom {
